@@ -5,7 +5,7 @@
 
 body{
     color: black;
-    background-image: url(/Vendor/CSS/img/Workers-Slide.jpg);
+    background-image: url(./Vendor/CSS/img/Workers-Slide.jpg);
     background-size: contain;
     background-position: absolute;
 }
@@ -79,7 +79,7 @@ body{
 
 .contenedor .contenido1 .carta .frente{
     grid-column: 1;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.555),#c0c4c083),url(/Vendor/CSS/img/seguridadocupacional1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.555),#c0c4c083),url(./Vendor/CSS/img/seguridadocupacional1.jpg);
     background-size: cover;
     text-align: center;
     display: flex;
@@ -127,7 +127,7 @@ body{
 
 .contenedor .contenido1 .carta2 .frente2{
     grid-column: 2;
-    background-image: linear-gradient(rgba(71, 70, 70, 0.555),#c0c4c083),url(/Vendor/CSS/img/parques-industriales-4-640x360.jpg);
+    background-image: linear-gradient(rgba(71, 70, 70, 0.555),#c0c4c083),url(./Vendor/CSS/img/parques-industriales-4-640x360.jpg);
     background-size: cover;
     text-align: center;
     display: flex;
@@ -296,7 +296,7 @@ body{
 
 .contenedor .contenido1 .carta3 .frente3{
     grid-column: 3;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.651),#c0c4c071),url(/Vendor/CSS/img/seguridad-e-higiene.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.651),#c0c4c071),url(./Vendor/CSS/img/seguridad-e-higiene.jpg);
     background-size: cover;
     text-align: center;
     display: flex;
@@ -377,7 +377,7 @@ body{
 
 .contenedor .contenido1 .carta4 .frente4{
     grid-column: 4;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.781),#c0c4c0b6),url(/Vendor/CSS/img/download.jfif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.781),#c0c4c0b6),url(./Vendor/CSS/img/download.jfif);
     background-size: cover;
     text-align: center;
     display: flex;
@@ -576,37 +576,37 @@ a{
 }
 
 #tarjetacarrusel-1{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.342),rgb(0, 0, 0)), url(/Vendor/CSS/img/contaminacion-quimita-portada.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.342),rgb(0, 0, 0)), url(./Vendor/CSS/img/contaminacion-quimita-portada.jpg);
     background-size: center; 
 }
 
 #tarjetacarrusel-2{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.432),rgba(255, 255, 255, 0.356)), url(/Vendor/CSS/img/tipos-contaminantes-emergentes-1280x720.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.432),rgba(255, 255, 255, 0.356)), url(./Vendor/CSS/img/tipos-contaminantes-emergentes-1280x720.jpg);
     background-size: cover;
 }
 
 #tarjetacarrusel-3{
-    background-image: url(/Vendor/CSS/img/Contaminación-Biológica.jpg);
+    background-image: url(./Vendor/CSS/img/Contaminación-Biológica.jpg);
     background-size: cover;
 }
 
 #tarjetacarrusel-4{
-    background-image:linear-gradient(rgba(255, 255, 255, 0.171),rgb(0, 0, 0)), url(/Vendor/CSS/img/consejos-para-combatir-el-estres-termico-en-el-trabajo-643x342.jpg);
+    background-image:linear-gradient(rgba(255, 255, 255, 0.171),rgb(0, 0, 0)), url(./Vendor/CSS/img/consejos-para-combatir-el-estres-termico-en-el-trabajo-643x342.jpg);
     background-size: cover;
 }
 
 #tarjetacarrusel-5{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.815),rgba(255, 255, 255, 0.253)), url(/Vendor/CSS/img/img_2348.gif);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.815),rgba(255, 255, 255, 0.253)), url(./Vendor/CSS/img/img_2348.gif);
     background-size: center;
 }
 
 #tarjetacarrusel-6{
-    background-image:linear-gradient(rgba(255, 255, 255, 0.616),rgb(0, 0, 0)), url(/Vendor/CSS/img/exposicion-a-vibraciones-riesgos-y-soluciones_115_big.jpg);
+    background-image:linear-gradient(rgba(255, 255, 255, 0.616),rgb(0, 0, 0)), url(./Vendor/CSS/img/exposicion-a-vibraciones-riesgos-y-soluciones_115_big.jpg);
     background-size: cover;
 }
 
 #tarjetacarrusel-7{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.747),rgba(255, 255, 255, 0.37)), url(/Vendor/CSS/img/profesionales-midiendo-radiacion-854x465.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.747),rgba(255, 255, 255, 0.37)), url(./Vendor/CSS/img/profesionales-midiendo-radiacion-854x465.jpg);
     background-size: center;
 }
 
