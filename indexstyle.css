@@ -1,0 +1,619 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: black;
+    background-image: url(/Vendor/CSS/img/Workers-Slide.jpg);
+    background-size: contain;
+    background-position: absolute;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 2000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header"
+                        "contenido1";
+}
+
+.contenedor > div, 
+.contenedor .footer,
+.contenedor .contenido1{
+    background: rgb(255, 255, 255);
+    padding: 45px;
+    border-radius: 4px;
+}
+
+/* Carta 1 */
+
+.contenedor .contenido1{
+    grid-area: contenido1;
+    text-align: justify;
+    line-height: 25px;
+    background: rgba(255, 255, 255, 0.041);
+ }
+
+.contenedor p{
+    font-size: 20px;
+}
+
+.contenedor .contenido1 .carta .frente h2{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: yellow;
+}
+
+.contenido1 .carta{
+    position: relative;
+    width: 100%;
+    height: 32rem;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    grid-area: carta;
+}
+
+.contenido1 .carta .frente{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    backface-visibility: hidden;
+    background: #fafafa;
+}
+
+.contenido1 .carta .detras{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #fafafa;
+    transform: rotateY(180deg);
+}
+
+.contenedor .contenido1 .carta .frente{
+    grid-column: 1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.555),#c0c4c083),url(/Vendor/CSS/img/seguridadocupacional1.jpg);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-area: sidebar;
+    list-style-type: none;
+}
+
+.contenedor .contenido1 .carta .detras{
+    grid-column: 1;
+    background-size: cover;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-area: sidebar;
+    list-style-type: none;
+}
+
+.contenedor .contenido1 .carta .detras p{
+    padding: 4rem;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    color: rgba(255, 255, 0, 0.459);
+}
+
+.contenedor .contenido1 .carta .detras {
+    background: linear-gradient(rgb(71, 71, 70),rgb(100, 71, 32));
+}
+
+/* Carta 1 */
+
+.carta:hover{
+    transform: rotateY(180deg);
+}
+
+.contenedor .carta2 .frente2 h2{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: rgb(168, 8, 8);
+}
+
+.contenedor .contenido1 .carta2 .frente2{
+    grid-column: 2;
+    background-image: linear-gradient(rgba(71, 70, 70, 0.555),#c0c4c083),url(/Vendor/CSS/img/parques-industriales-4-640x360.jpg);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-area: sidebar;
+    list-style-type: none;
+}
+
+.contenedor .contenido1 .carta2 .detras2{
+    background: linear-gradient(rgb(148, 148, 147),rgb(159, 185, 10));
+}
+
+.contenedor .contenido1 .carta2 .detras2 p{
+    padding: 2rem;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    color: rgb(129, 5, 5);
+}
+
+.contenedor .contenido1 .carta2 .frente2 h2{
+    font-size: 3rem;
+}
+
+.contenedor .contenido1 .carta2 .detras2{
+    grid-column: 2;
+    background-size: cover;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-area: sidebar;
+    list-style-type: none;
+}
+
+.contenido1 .carta2{
+    position: relative;
+    width: 100%;
+    height: 32rem;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    grid-area: carta2;
+}
+
+.contenido1 .carta2 .frente2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    backface-visibility: hidden;
+    background: #fafafa;
+}
+
+.contenido1 .carta2 .detras2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #fafafa;
+    transform: rotateY(180deg);
+}
+
+.carta2:hover{
+    transform: rotateY(180deg);
+}
+
+.contenido1{
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "carta carta2 carta3 carta4"
+                         "ventajas ventajas ventajas ventajas"
+                         "riesgos riesgos riesgos riesgos" ;
+}
+
+.ventajas{
+    grid-area: ventajas;
+    text-align: justify;
+    justify-content: center;
+    display: flex;
+  
+}
+
+.ventajas ul li{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.lista{
+    background-color: #282828;
+    border-radius: 1rem;
+    padding: 2rem;
+    color: white;
+    width: 60%;
+    text-align: justify;
+}
+
+.lista h2{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.riesgos{
+    grid-area: riesgos;
+    height: 30rem;
+    background-color: rgba(255, 99, 71, 0.877);
+    border-radius: 1rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.riesgos .parrafo{
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+}
+
+
+.riesgos h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.imagen1{
+    grid-area: imagen1;
+    width: 70%;
+    margin-right: 40rem;
+    height: 20rem;
+    margin-top: 10rem;
+}
+
+
+.contenedor .contenido1{
+    grid-area: contenido1;
+    text-align: justify;
+    line-height: 25px;
+ }
+
+.contenedor p{
+    font-size: 20px;
+}
+
+.contenido1 .carta{
+    position: relative;
+    width: 100%;
+    height: 32rem;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    grid-area: carta;
+}
+
+/* Carta 3 */
+
+.contenedor .carta3 .frente3 h2{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: rgb(79, 231, 48);
+}
+
+.contenedor .contenido1 .carta3 .frente3{
+    grid-column: 3;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.651),#c0c4c071),url(/Vendor/CSS/img/seguridad-e-higiene.jpg);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-area: carta3;
+    list-style-type: none;
+}
+
+.contenedor .contenido1 .carta3 .detras3{
+    background: linear-gradient(rgb(185, 185, 184),rgb(63, 63, 62));
+}
+
+.contenedor .contenido1 .carta3 .detras3 li{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: black;
+}
+
+.contenedor .contenido1 .carta3 .frente3 h2{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.contenedor .contenido1 .carta3 .detras3{
+    grid-column: 3;
+    background-size: cover;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-area: carta3;
+    list-style-type: none;
+}
+
+.contenido1 .carta3{
+    position: relative;
+    width: 100%;
+    height: 32rem;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    grid-area: carta3;
+}
+
+.contenido1 .carta3 .frente3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    backface-visibility: hidden;
+    background: #fafafa;
+}
+
+.contenido1 .carta3 .detras3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #fafafa;
+    transform: rotateY(180deg);
+}
+
+.carta3:hover{
+    transform: rotateY(180deg);
+}
+
+
+/* Carta4 */
+
+.contenedor .carta4 .frente4 h2{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: rgb(19, 19, 184);
+}
+
+.contenedor .contenido1 .carta4 .frente4{
+    grid-column: 4;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.781),#c0c4c0b6),url(/Vendor/CSS/img/download.jfif);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-area: carta4;
+    list-style-type: none;
+}
+
+.contenedor .contenido1 .carta4 .detras4{
+    background: linear-gradient(rgba(71, 71, 70, 0.822),rgba(229, 230, 227, 0.589));
+}
+
+.contenedor .contenido1 .carta4 .detras4 li{
+    font-size: 2rem;
+    line-height: 4rem;
+    color: black;
+}
+
+.contenedor .contenido1 .carta4 .frente4 h2{
+    font-size: 3rem;
+}
+
+.contenedor .contenido1 .carta4 .detras4{
+    grid-column: 4;
+    background-size: cover;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-area: carta4;
+    list-style-type: none;
+}
+
+.contenido1 .carta4{
+    position: relative;
+    width: 100%;
+    height: 32rem;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    grid-area: carta4;
+}
+
+.contenido1 .carta4 .frente4{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    backface-visibility: hidden;
+    background: #fafafa;
+}
+
+.contenido1 .carta4 .detras4{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #fafafa;
+    transform: rotateY(180deg);
+}
+
+.carta4:hover{
+    transform: rotateY(180deg);
+}
+
+#conteItemsCarrusel{
+    height: 28.5rem;
+    overflow: hidden;
+}
+
+.itemCarrusel{
+    height: 100%;
+    position: relative;
+}
+
+.tarjetaCarrusel{
+    height: 100%;
+}
+
+.flechasCarrusel{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+#contepuntos{
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+#contepuntos a{
+    font-size: 2rem;
+}
+
+.lista-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .footer{
+    background: #12203eec;
+    color: #fff;
+    grid-area: footer;
+    height: 75px;
+}
+
+.contenedor .footer li{
+    display: inline;
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.lista-footer li a:link, .lista-footer li a:visited{
+    transition: border-bottom 0.5s;
+}
+
+.lista-footer li:hover, .lista-footer li a:active{
+    border-bottom: 5px solid chocolate ;
+}
+
+.contenedor .footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.contenedor .footer a li:hover{
+    transform: scale(2);
+}
+
+.contenedor .header{
+    background: rgba(141, 90, 13, 0.76);
+    background-size: cover;
+    color: white;
+    grid-area: header;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.tarjetaCarrusel h3{
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+}
+
+.tarjetaCarrusel{
+    text-align: justify;
+    background: #faa53def;
+    padding: 5rem;
+}
+
+.tarjetaCarrusel p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: white;
+}
+
+.tarjetaCarrusel li{
+    font-size: 2rem;
+    line-height: 3rem;
+    color: snow;
+}
+
+#tarjetacarrusel-3 li{
+    line-height: 2.3rem;
+}
+
+
+#contepuntos a{
+    text-transform: font-size(16);
+    transition: transform 0.5s;
+}
+
+#contepuntos a:hover{
+    background: rgb(78, 78, 78);
+}
+
+.flechasCarrusel:active{
+    transition: 3s;
+}
+
+#tarjetacarrusel-1{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.342),rgb(0, 0, 0)), url(/Vendor/CSS/img/contaminacion-quimita-portada.jpg);
+    background-size: center; 
+}
+
+#tarjetacarrusel-2{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.432),rgba(255, 255, 255, 0.356)), url(/Vendor/CSS/img/tipos-contaminantes-emergentes-1280x720.jpg);
+    background-size: cover;
+}
+
+#tarjetacarrusel-3{
+    background-image: url(/Vendor/CSS/img/Contaminación-Biológica.jpg);
+    background-size: cover;
+}
+
+#tarjetacarrusel-4{
+    background-image:linear-gradient(rgba(255, 255, 255, 0.171),rgb(0, 0, 0)), url(/Vendor/CSS/img/consejos-para-combatir-el-estres-termico-en-el-trabajo-643x342.jpg);
+    background-size: cover;
+}
+
+#tarjetacarrusel-5{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.815),rgba(255, 255, 255, 0.253)), url(/Vendor/CSS/img/img_2348.gif);
+    background-size: center;
+}
+
+#tarjetacarrusel-6{
+    background-image:linear-gradient(rgba(255, 255, 255, 0.616),rgb(0, 0, 0)), url(/Vendor/CSS/img/exposicion-a-vibraciones-riesgos-y-soluciones_115_big.jpg);
+    background-size: cover;
+}
+
+#tarjetacarrusel-7{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.747),rgba(255, 255, 255, 0.37)), url(/Vendor/CSS/img/profesionales-midiendo-radiacion-854x465.jpg);
+    background-size: center;
+}
+
+
+
+
+
+
+
+
